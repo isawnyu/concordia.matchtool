@@ -1,0 +1,13 @@
+README.txt
+setup.cfg
+setup.py
+concordia/__init__.py
+concordia.matchtool.egg-info/PKG-INFO
+concordia.matchtool.egg-info/SOURCES.txt
+concordia.matchtool.egg-info/dependency_links.txt
+concordia.matchtool.egg-info/entry_points.txt
+concordia.matchtool.egg-info/namespace_packages.txt
+concordia.matchtool.egg-info/requires.txt
+concordia.matchtool.egg-info/top_level.txt
+concordia.matchtool.egg-info/zip-safe
+concordia/matchtool/__init__.py
