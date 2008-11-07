@@ -2,6 +2,7 @@ from setuptools import setup, find_packages
 import os
 
 version = '0.1'
+readme = open('README.txt', 'rb').read()
 
 setup(name='concordia.matchtool',
       version=version,
@@ -22,6 +23,7 @@ setup(name='concordia.matchtool',
       namespace_packages=['concordia'],
       include_package_data=True,
       zip_safe=True,
+      test_suite='concordia.matchtool.tests.test_suite',      
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-

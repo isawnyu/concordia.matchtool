@@ -11,3 +11,10 @@ concordia.matchtool.egg-info/requires.txt
 concordia.matchtool.egg-info/top_level.txt
 concordia.matchtool.egg-info/zip-safe
 concordia/matchtool/__init__.py
+concordia/matchtool/config.py
+concordia/matchtool/dset.py
+concordia/matchtool/errors.py
+concordia/matchtool/rule.py
+concordia/matchtool/tests/__init__.py
+concordia/matchtool/tests/test_doctests.py
+docs/HISTORY.txt

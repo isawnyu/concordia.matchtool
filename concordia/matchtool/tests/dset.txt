@@ -1,0 +1,11 @@
+
+    >>> import os
+    >>> import concordia.matchtool.dset as dset
+    >>> from concordia.matchtool.config import Config
+    >>> cpath = "concordia/matchtool/tests/test-data.cfg"
+    >>> c = Config(cpath)
+    >>> d = dset.DSet(c)
+    >>> filename = 'concordia/matchtool/tests/data/alist-geog.xml'
+    >>> d.loadxml(filename)
+
+/Users/tom/Sandbox/www.atlantides.org/concordia.matchtool/concordia/matchtool/tests/data/alist-geog.xml
