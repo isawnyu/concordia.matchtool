@@ -14,3 +14,5 @@ into this internal data structure, which rules.py then knows how to do stuff wit
 
 concordia/matchtool/data.cfg provides configuration information (like relative or absolute paths to data files)
 
+concordia/matchtool/tests/rule.txt contains some explanatory tests for the classes and methods in concordia/matchtool/rules.py
+
