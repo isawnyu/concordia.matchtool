@@ -1,0 +1,20 @@
+Tests for matcher
+
+import concordia.matchtool.match as m
+import logging as l
+
+Verify presence of methods
+
+q = m.match
+
+Verify parameter options
+
+thislist = [('q'), ('t'), ('p')]
+thatlist = [('a'),('b'),('c')]
+import concordia.matchtool.rule as r
+rules = [r.Rule((0,0))]
+q = m.match(thislist, thatlist)
+q = m.match(thislist, thatlist, rules)
+
+Verify default matching behavior
+
