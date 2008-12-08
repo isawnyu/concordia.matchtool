@@ -39,7 +39,17 @@ ruletypes = [
     RULETYPENUMBER,
     RULETYPEREGEX
     ]
-    
+
+ruletypedict = {
+    'string' : RULETYPESTRING,
+    'caseless' : RULETYPECASELESS,
+    'approximate' : RULETYPEAPPROX,
+    'approx' : RULETYPEAPPROX, 
+    'number' : RULETYPENUMBER,
+    'regex' : RULETYPEREGEX,
+    're' : RULETYPEREGEX
+}
+
 RULECONFNONE = 0
 RULECONFLOW = 1
 RULECONFHIGH = 2
