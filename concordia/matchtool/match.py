@@ -45,12 +45,7 @@ def match(these, those, rules=None):
     for this in these:
         if not(rules):
             results = map(lambda x: (x==this, x), those)
-            #fresults = filter(lambda x: x[0], results)
-            #matches = [m[1] for m in fresults]
         else:
-            l.warning('rule-based matches are not yet implemented so you will get an empty result set!')
-            #matches = []
             results = map(lambda x: (rules(this, x), x), those)
-        #yield matches
         yield results
     

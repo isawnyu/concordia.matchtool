@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: concordia.matchtool
-Version: 0.1dev-r34
+Version: 0.1dev-r35
 Summary: 'Attempt rule-based matching of content across two data files'
 Home-page: 'http://concordia.atlantides.org'
 Author: 'Tom Elliott'
