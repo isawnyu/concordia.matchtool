@@ -52,7 +52,11 @@ RULECONFDFLT = RULECONFCERT
 
 class Rule():
     """
-    data and methods for match rules
+    ancestor class to hold data and methods for match rules
+    
+    has two methods: init and match
+    
+    this version of the class, when called, only returns True
     """
     
     def __init__(self):
@@ -69,6 +73,10 @@ class Rule():
         
         
 class RuleExact(Rule):
+    """
+    This rule compares two values (passed to __call__()) and returns the boolean
+    result of an exact comparison
+    """
         
     def __call__(self, this, that):
         """
@@ -80,6 +88,11 @@ class RuleExact(Rule):
         
 
 class RuleCaseless(Rule):
+    """
+    This rule compares two values (assumed to be strings and passed to __call__())
+    converts both of them to lowercase and returns the result of an exact comparison
+    between these lowercase versions
+    """
 
     def __call__(self, this, that):
         x = this.lower()
@@ -88,6 +101,14 @@ class RuleCaseless(Rule):
         
         
 class RuleApprox(Rule):
+    """
+    This rule compares two values using difflib.Sequencematcher. __init__ takes an
+    optional parameter called "ratio", which is used by __call__() to judge the 
+    "goodness" of the match between the two values. If it is not supplied, 0.6 is
+    taken as the default. If Sequencematcher returns a ratio greater than the 
+    ratio value passed to RuleApprox._init_() then __call__() returns True, otherwise
+    False.
+    """
 
     def __init__(self, ratio=0.6):
         self.goodratio = ratio
@@ -107,6 +128,20 @@ class RuleApprox(Rule):
         
         
 class RuleSet():
+    """
+    This class defines an ordered collection of rule objects and a confidence
+    value to return if they all evaluate to True. 
+    
+    The list of rule objects is defined by a script that is passed to __init__(): 
+    a list of tuples in which each tuple has three parts: a rule type string 
+    (matching a key in ruletypedict), and then two indexes. The first index
+    indicates which value in the "this" parameter later passed to __call__()
+    should be used in the comparison. The second index indicates which
+    value in the "that" parameter should be used in the comparison. This
+    permits a single ruleset to contain rules that operate on different
+    parts of the data records passed to the ruleset. See tests/rule.txt
+    for some example usages.
+    """
     
     def __init__(self, rscript, confidence):
     

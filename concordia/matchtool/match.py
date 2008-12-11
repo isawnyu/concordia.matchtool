@@ -27,7 +27,8 @@ from errors import Error, ParameterError
 def match(these, those, rules=None):
     """
     match the next item in 'these' against items in 'those' according to
-    the ruleset defined in 'rules'
+    the ruleset defined in 'rules'. See tests/match.txt for some 
+    usage examples
     
     parameters:
     
@@ -36,9 +37,7 @@ def match(these, those, rules=None):
        'these' are assumed to be ordered series of values to be used in the
        matching operation defined in 'rules')
     
-    - 'rules': a sequence of rule objects whose data and methods are 
-       defined in concordia.matchtool.rule. If no rule(s) are defined, then
-       'match' performs a simple filter on the sequence
+    - 'rules': a ruleset as defined in rule.py
        
     """
 

@@ -4,7 +4,7 @@ Handlers for custom exceptions
 """
 
 
-# Part of idp.contentool
+# Part of concordia.matchtool
 #
 # Copyright (c) 2008, Institute for the Study of the Ancient World, New 
 # York University

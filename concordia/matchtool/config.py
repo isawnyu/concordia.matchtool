@@ -3,7 +3,7 @@ config.py
 Load and parse configuration files for use by other code.
 """
 
-# Part of idp.contentool
+# Part of concordia.matchtool
 #
 # Copyright (c) 2008, Institute for the Study of the Ancient World, New 
 # York University
