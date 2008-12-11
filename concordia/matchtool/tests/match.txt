@@ -1,20 +1,45 @@
 Tests for matcher
 
-import concordia.matchtool.match as m
-import logging as l
+    >>> import concordia.matchtool.match as m
+    >>> import logging as l
 
 Verify presence of methods
 
-q = m.match
+    >>> g = m.match
 
 Verify parameter options
 
-thislist = [('q'), ('t'), ('p')]
-thatlist = [('a'),('b'),('c')]
-import concordia.matchtool.rule as r
-rules = [r.Rule((0,0))]
-q = m.match(thislist, thatlist)
-q = m.match(thislist, thatlist, rules)
+    >>> thislist = [('q'), ('t'), ('p')]
+    >>> thatlist = [('a'),('b'),('c')]
+    >>> import concordia.matchtool.rule as r
+    >>> rules = [r.Rule()]
+    >>> g = m.match(thislist, thatlist)
+    >>> g = m.match(thislist, thatlist, rules)
 
 Verify default matching behavior
 
+    >>> g = m.match(thislist, thatlist)
+    >>> g.next()
+    [(False, 'a'), (False, 'b'), (False, 'c')]
+    >>> g.next()
+    [(False, 'a'), (False, 'b'), (False, 'c')]
+    >>> g.next()
+    [(False, 'a'), (False, 'b'), (False, 'c')]
+    >>> thislist = [('c'), ('a'), ('t')]
+    >>> g = m.match(thislist, thatlist)
+    >>> g.next()
+    [(False, 'a'), (False, 'b'), (True, 'c')]
+    >>> g.next()
+    [(True, 'a'), (False, 'b'), (False, 'c')]
+    >>> g.next()
+    [(False, 'a'), (False, 'b'), (False, 'c')]
+
+Verify rules-based matching behavior
+
+    >>> rscript = [('exact',0,0), ('exact',1,1), ('exact',2,2)]
+    >>> rs = r.RuleSet(rscript, 1.0)
+    >>> thislist = [('65', 'B3', 'Aphrodisias/Ninoe', 'line 53 in the directory table')]
+    >>> thatlist = [('65', 'B3', 'Aphrodisias/Ninoe', 'feature 77 in the shapefile'), ('65', 'B3', 'Nowhere', 'feature 78 in the shapefile')]
+    >>> g = m.match(thislist, thatlist, rs)
+    >>> g.next()
+    [(1.0, ('65', 'B3', 'Aphrodisias/Ninoe', 'feature 77 in the shapefile')), (0.0, ('65', 'B3', 'Nowhere', 'feature 78 in the shapefile'))]

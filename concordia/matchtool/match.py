@@ -8,7 +8,7 @@ Supports list-based matching, with optional rulesets
 # Copyright (c) 2008, Institute for the Study of the Ancient World, New 
 # York University
 #
-# idp.contenttool is free software: you can redistribute it and/or modify
+# concordia.matchtool is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
@@ -24,7 +24,7 @@ Supports list-based matching, with optional rulesets
 import logging as l
 from errors import Error, ParameterError
             
-def match(these, those, rules=[]):
+def match(these, those, rules=None):
     """
     match the next item in 'these' against items in 'those' according to
     the ruleset defined in 'rules'
@@ -34,7 +34,7 @@ def match(these, those, rules=[]):
     - 'these' and 'those': sequences containing one or more sequences 
        on which the match is to be based (the individual sequences inside 
        'these' are assumed to be ordered series of values to be used in the
-       matching operation defined in 'rules'
+       matching operation defined in 'rules')
     
     - 'rules': a sequence of rule objects whose data and methods are 
        defined in concordia.matchtool.rule. If no rule(s) are defined, then
@@ -43,11 +43,14 @@ def match(these, those, rules=[]):
     """
 
     for this in these:
-        if len(rules) == 0:
+        if not(rules):
             results = map(lambda x: (x==this, x), those)
-            matches = filter(lambda x: x[0], results)
+            #fresults = filter(lambda x: x[0], results)
+            #matches = [m[1] for m in fresults]
         else:
             l.warning('rule-based matches are not yet implemented so you will get an empty result set!')
-            matches = []
-        yield matches
+            #matches = []
+            results = map(lambda x: (rules(this, x), x), those)
+        #yield matches
+        yield results
     

@@ -23,37 +23,30 @@ Define a class for expressing and evaluating match rules
 
 import logging as l
 from errors import Error, ParameterError
+from difflib import SequenceMatcher
         
-RULETYPESTRING = 1
+RULETYPEEXACT = 1
 RULETYPECASELESS = 2
 RULETYPEAPPROX = 3
-RULETYPENUMBER = 4
-RULETYPEREGEX = 5
-
-RULETYPEDFLT = RULETYPESTRING
-
-ruletypes = [
-    RULETYPESTRING,
-    RULETYPECASELESS,
-    RULETYPEAPPROX,
-    RULETYPENUMBER,
-    RULETYPEREGEX
-    ]
 
 ruletypedict = {
-    'string' : RULETYPESTRING,
+    'exact' : RULETYPEEXACT,
     'caseless' : RULETYPECASELESS,
     'approximate' : RULETYPEAPPROX,
     'approx' : RULETYPEAPPROX, 
-    'number' : RULETYPENUMBER,
-    'regex' : RULETYPEREGEX,
-    're' : RULETYPEREGEX
 }
 
-RULECONFNONE = 0
-RULECONFLOW = 1
-RULECONFHIGH = 2
-RULECONFCERT = 3
+RULECONFNONE = 0.0
+RULECONFLOW = 0.3
+RULECONFHIGH = 0.7
+RULECONFCERT = 1.0
+
+ruleconfdict = {
+    'none' : RULECONFNONE,
+    'low' : RULECONFLOW,
+    'high' : RULECONFHIGH,
+    'ruleconfcert' : RULECONFCERT
+}
 
 RULECONFDFLT = RULECONFCERT
 
@@ -62,70 +55,96 @@ class Rule():
     data and methods for match rules
     """
     
-    def __init__(self, indexes, type=RULETYPEDFLT, confidence=RULECONFDFLT):
+    def __init__(self):
         """
         initialize a rule object
-        parameters:
-            indexes = pair of list indexes (tuple) to use in performing match (order
-                in which passed is significant, and must be observed when indexes
-                are passed to self.eval())
-            type = type of evaulation to perform on values (using eval() method)
-            confidence = confidence value to return from eval() method when
-                match is successful
+        """
+        pass
+        
+    def __call__(self):
+        """
+        evaluate the function
+        """
+        return True
+        
+        
+class RuleExact(Rule):
+        
+    def __call__(self, this, that):
+        """
+        evaluate this rule by exactly comparing a value in each of the two records
+        (index indicated by self.                
         """
         
-        self.idx = indexes
-        if type not in ruletypes:
-            raise ParameterError('type', type, 'not a valid rule type value')
-        self.type = type
-        self.confidence=confidence
-    
-    
-    def eval(self, valuelists):
-        """
-        evaluate values at self.indexes in valuelists (order is important) according
-        to this rule
-        """
+        return this == that
         
-        if self.type == RULETYPESTRING:
-            return self.evalstring(valuelists)
-        elif self.type == RULETYPECASELESS:
-            return self.evalcaseless(valuelists)
-        elif self.type == RULETYPEAPPROX:
-            return self.evalapprox(valuelists)
-        elif self.type == RULETYPENUMBER:
-            return self.evalnumber(valuelists)
-        elif self.type == RULETYPEREGEX:
-            return self.evalregex(valuelists)
 
+class RuleCaseless(Rule):
 
-    def evalstring(self, valuelists):
-        if valuelists[0][self.idx[0]] == valuelists[1][self.idx[1]]:
-            return self.confidence
-        else:
-            return RULECONFNONE
-    
-    def evalcaseless(self, valuelists):
-        v1 = valuelists[0][self.idx[0]].lower()
-        v2 = valuelists[1][self.idx[1]].lower()
-        if v1 == v2:
-            return self.confidence
-        else:
-            return RULECONFNONE
-    
-    def evalapprox(self, valuelists):
-        l.warning ("rule.Rule.evalapprox() is not implemented and returns nothing")
-    
-    def evalnumber(self, valuelists):
-        if valuelists[0][self.idx[0]] == valuelists[1][self.idx[1]]:
-            return self.confidence
-        else:
-            return RULECONFNONE
-    
-    def evalregex(self, valuelists):
-        l.warning("rule.Rule.evalregex() is not implemented and returns nothing")
+    def __call__(self, this, that):
+        x = this.lower()
+        y = that.lower()
+        return x == y
+        
+        
+class RuleApprox(Rule):
 
-   
+    def __init__(self, ratio=0.6):
+        self.goodratio = ratio
+        self.realratio = -1
+        
+    def __call__(self, this, that):
+        result = False
+        sm = SequenceMatcher(None, this, that)
+        self.realratio = sm.real_quick_ratio()
+        if self.realratio >= self.goodratio:
+            self.realratio = sm.ratio()
+            if self.realratio >= self.goodratio:
+                result = True
+        return result
+        
+    
+        
+        
+class RuleSet():
+    
+    def __init__(self, rscript, confidence):
+    
+        
+        self.confidence = confidence
+        self.rules = []
+        
+        for rs in rscript:
+            rstr = None
+            i = None
+            j = None
+            param = None
+            try:
+                rtstr, i, j, param = rs
+            except:
+                rtstr, i, j = rs
+            try:
+                rt = ruletypedict[rtstr]
+            except KeyError:
+                raise ParameterError('rt', rt, "must be one of: %s" % ' | '.join(ruletypedict.keys()))
+            if rt == RULETYPEEXACT:
+                r = RuleExact()
+            elif rt == RULETYPECASELESS:
+                r = RuleCaseless()
+            elif rt == RULETYPEAPPROX:
+                r = RuleApprox(param)
+            else:
+                raise ParameterError('rt', rt, "must be one of: %s" % ' | '.join(ruletypedict.keys())) 
+            self.rules.append((r, i, j))
+            
+    def __call__(self, this, that):
+        for eval, i, j in self.rules:
+            if eval(this[i], that[j]):
+                pass
+            else:
+                return RULECONFNONE
+        return self.confidence
+            
 class RuleError(Error):
     """Exception raised for errors in rule initialization or evaluation.
     

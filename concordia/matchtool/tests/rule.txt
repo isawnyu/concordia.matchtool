@@ -1,67 +1,79 @@
 Tests for rule engine
 
->>> import concordia.matchtool.rule as rule
->>> import logging as l
+    >>> import concordia.matchtool.rule as rule
+    >>> import logging as l
 
-Verify integrite of rule confidence values
->>> print rule.RULECONFCERT
-3
->>> print rule.RULECONFHIGH
-2
->>> print rule.RULECONFLOW
-1
->>> print rule.RULECONFNONE
-0
->>> print rule.RULECONFDFLT
-3
+Verify integrity of rule confidence values
+
+    >>> print rule.RULECONFCERT
+    1.0
+    >>> print rule.RULECONFHIGH
+    0.7
+    >>> print rule.RULECONFLOW
+    0.3
+    >>> print rule.RULECONFNONE
+    0.0
 
 Verify integrity of rule type constants
->>> len(rule.ruletypes)
-5
->>> print rule.RULETYPESTRING
-1
->>> print rule.RULETYPECASELESS
-2
->>> print rule.RULETYPEAPPROX
-3
->>> print rule.RULETYPENUMBER
-4
->>> print rule.RULETYPEREGEX
-5
->>> print rule.RULETYPEDFLT
-1
 
-Establish some test values and then build and test some rules
->>> vl1 = ['pig', 'dog', 'cat', 1, 2.7, 5.33, 5.33, 9.0]
->>> vl2 = ['gerbil', 'dog', 'Cat', 1, 2.7, 5.37, 4, 9]
->>> vv = (vl1, vl2)
->>> r1 = rule.Rule((0,0))
->>> r1.idx
-(0, 0)
->>> m1 = r1.eval(vv)
->>> m1
-0
->>> r2 = rule.Rule((1,1))
->>> m2 = r2.eval(vv)
->>> m2
-3
->>> r3 = rule.Rule((2,2), rule.RULETYPECASELESS)
->>> m3 = r3.eval(vv)
->>> m3
-3
->>> r4 = rule.Rule((3,3), rule.RULETYPENUMBER)
->>> m4 = r4.eval(vv)
->>> m4
-3
->>> r5 = rule.Rule((4,4), rule.RULETYPENUMBER)
->>> m5 = r5.eval(vv)
->>> m5
-3
->>> r6 = rule.Rule((5,5), rule.RULETYPENUMBER)
->>> m6 = r6.eval(vv)
->>> m6
-0
->>> r7 = rule.Rule((6,6), rule.RULETYPENUMBER)
->>> m7 = r7.eval(vv)
->>> m7
-0
+    >>> print rule.RULETYPEEXACT
+    1
+    >>> print rule.RULETYPECASELESS
+    2
+    >>> print rule.RULETYPEAPPROX
+    3
+
+Check that the various types of rules behave as expected 
+
+    >>> r = rule.Rule()
+    >>> r()
+    True
+    
+    >>> r = rule.RuleExact()
+    >>> r('cat','dog')
+    False
+    >>> r('cat','cat')
+    True
+    >>> r('cat', 'Cat')
+    False
+
+    >>> r = rule.RuleCaseless()
+    >>> r('cat','dog')
+    False
+    >>> r('cat','cat')
+    True
+    >>> r('cat','Cat')
+    True
+    
+    >>> r = rule.RuleApprox()
+    >>> d = 'bat'
+    >>> r('cat','dog')
+    False
+    >>> r('cat','cat')
+    True
+    >>> r('cat','Cat')
+    True
+    >>> r('cat','bat')
+    True
+    >>> r('Athenai','Athenae')
+    True
+    
+    >>> r = rule.RuleApprox(0.9)
+    >>> r('Athenai','Athenae')
+    False
+
+Construct and evaluate some rule sets
+
+    >>> rscript = [('exact',0,0), ('exact',1,1), ('exact',2,2)]
+    >>> fromdir = ('65', 'B3', 'Aphrodisias/Ninoe')
+    >>> frommap = ('65', 'B3', 'Aphrodisias/Ninoe')
+    >>> rs = rule.RuleSet(rscript, rule.RULECONFCERT)
+    >>> rs(fromdir, frommap) == rule.RULECONFCERT
+    True
+    >>> frommap2 = ('65', 'B2', 'Aphrodisias/Ninoe')
+    >>> rs(fromdir, frommap2) == rule.RULECONFCERT
+    False
+    >>> rscript = [('exact',0,0), ('approx',1,1), ('exact',2,2)]
+    >>> rs = rule.RuleSet(rscript, rule.RULECONFHIGH)
+    >>> rs(fromdir, frommap2) == rule.RULECONFHIGH
+    True

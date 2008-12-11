@@ -12,9 +12,16 @@ concordia.matchtool.egg-info/top_level.txt
 concordia.matchtool.egg-info/zip-safe
 concordia/matchtool/__init__.py
 concordia/matchtool/config.py
+concordia/matchtool/data.cfg
 concordia/matchtool/dset.py
 concordia/matchtool/errors.py
+concordia/matchtool/match.py
 concordia/matchtool/rule.py
 concordia/matchtool/tests/__init__.py
+concordia/matchtool/tests/dset.txt
+concordia/matchtool/tests/match.txt
+concordia/matchtool/tests/rule.txt
+concordia/matchtool/tests/test-data.cfg
 concordia/matchtool/tests/test_doctests.py
+concordia/matchtool/tests/data/alist-geog.xml
 docs/HISTORY.txt

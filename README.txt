@@ -1,11 +1,75 @@
-Introduction
-============
+Read me for concordia.matchtool
+=====================
 
-We need a real readme, but for now.
+concordia.matchtool is a framework for defining and executing rulesets to 
+effect matching of records in two datasets. The original use case is getting
+matches between print-style BAtlas citations held in the IAph2007 
+inscriptions collection and Barrington Atlas IDs. Another early use case
+is matching content extracted from the Barrington Atlas Directory
+compilation files against feature data digitized from Barrington Atlas
+compilation maps.
 
-a framework for defining and executing match rulesets for relating content in two datasets with different schemata
+Rights, origins and credit
+================
 
-original use case is getting matches between print-style BAtlas citations held in aphrodisias inscriptions xml and our batlas ids
+concordia.matchtool was written by Tom Elliott for the Institute for the 
+Study of the Ancient World under the rubric of the Concordia project 
+(http://concordia.atlantides.org) with funding provided by the National 
+Endowment for the Humanities.
+
+Copyright (c) 2008 Institute for the Study of the Ancient World, New York 
+University
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program (LICENSE.txt).  If not, see 
+<http://www.gnu.org/licenses/>.
+
+
+Configuration
+=========
+
+TBD
+
+
+Dependencies
+=========
+
+See DEPENDENCIES.txt
+
+
+Tests
+===
+
+To run tests, cd into the top-level package directory (idp.contenttool) and type:
+
+%% python setup.py test
+
+
+Components and using them
+===================
+
+Most modules and functions have docstrings, which explain their constituent
+classes and methods. This information is not repeated here in order to avoid the
+dreaded multiple-source documentation disease. 
+
+The tests are a good way to learn how the different components work.
+
+You can view a formatted version of the docstrings, plus additional information 
+automatically gathered about subordinate and inherited classes and methods, 
+using the python built-in help() function, for example:
+
+>>> import concordia.matchtool.match as m
+>>> help(m)
 
 concordia/matchtool/rules.py defines classes for building, managing and executing rulesets
 
