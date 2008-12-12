@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset>
+    <record>
+        <field name="id">acheron</field>
+        <field name="geogname">Acheron</field>
+        <field name="extrainfo">river; Barrington Atlas 86 B2</field>
+    </record>
+    <record>
+        <field name="id">Aezani</field>
+        <field name="geogname">Aizanoi</field>
+        <field name="extrainfo">Barrington Atlas 62 C3</field>
+    </record>
+    <record>
+        <field name="id">Agrigentum</field>
+        <field name="geogname">Agrigentum</field>
+        <field name="extrainfo">Barrington Atlas 47 D4</field>
+    </record>
+    <record>
+        <field name="id">Ainos</field>
+        <field name="geogname">Ainos</field>
+        <field name="extrainfo">Barrington Atlas 51 G3</field>
+    </record>
+    <record>
+        <field name="id">Alabanda</field>
+        <field name="geogname">Alabanda</field>
+        <field name="extrainfo">Barrington Atlas 61 F2</field>
+    </record>
+    <record>
+        <field name="id">Alexandria</field>
+        <field name="geogname">Alexandria of Egypt</field>
+        <field name="extrainfo">Barrington Atlas 74 B2</field>
+    </record>
+    <record>
+        <field name="id">AlexandriaTroas</field>
+        <field name="geogname">Alexandria Troas</field>
+        <field name="extrainfo">Barrington Atlas 56 C2</field>
+    </record>
+    <record>
+        <field name="id">Alia</field>
+        <field name="geogname">Alia</field>
+        <field name="extrainfo">Barrington Atlas 62 C4</field>
+    </record>
+    <record>
+        <field name="id">Anazarbus</field>
+        <field name="geogname">Anazarbus</field>
+        <field name="extrainfo">Barrington Atlas 67 B2</field>
+    </record>
+    <record>
+        <field name="id">Ancyra</field>
+        <field name="geogname">Ancyra</field>
+        <field name="extrainfo">Barrington Atlas 63 B1</field>
+    </record>
+    <record>
+        <field name="id">Antinoopolis</field>
+        <field name="geogname">Antinoopolis</field>
+        <field name="extrainfo">Barrington Atlas 77 D1</field>
+    </record>
+    <record>
+        <field name="id">Antioch</field>
+        <field name="geogname">Antioch of Syria</field>
+        <field name="extrainfo"> Barrington Atlas 89 D3</field>
+    </record>
+    <record>
+        <field name="id">AntiochMaeand</field>
+        <field name="geogname">Antioch on the Maeander</field>
+        <field name="extrainfo"> Barrington Atlas 65 A2</field>
+    </record>
+    <record>
+        <field name="id">Apamea</field>
+        <field name="geogname">Apamea</field>
+        <field name="extrainfo">Barrington Atlas 68 B3</field>
+    </record>
+    <record>
+        <field name="id">Aphrodito</field>
+        <field name="geogname">Aphrodito</field>
+        <field name="extrainfo">Barrington Atlas 77 E3</field>
+    </record>
+    <record>
+        <field name="id">ApolloniaPal</field>
+        <field name="geogname">Apollonia in Palestine</field>
+        <field name="extrainfo">Barrington Atlas 69 A5</field>
+    </record>
+    <record>
+        <field name="id">ApolloniaLib</field>
+        <field name="geogname">Apollonia in Libya</field>
+        <field name="extrainfo">Barrington Atlas 38 C1</field>
+    </record>
+    <record>
+        <field name="id">ApolloniaPis</field>
+        <field name="geogname">Apollonia in Pisidia</field>
+        <field name="extrainfo">Barrington Atlas 65 D1</field>
+    </record>
+    <record>
+        <field name="id">ApolloniaThrac</field>
+        <field name="geogname">Apollonia in Thrace</field>
+        <field name="extrainfo">Barrington Atlas 51 C3</field>
+    </record>
+    <record>
+        <field name="id">Athens</field>
+        <field name="geogname">Athens</field>
+        <field name="extrainfo">Barrington Atlas 59 B3</field>
+    </record>
+    <record>
+        <field name="id">Attalia</field>
+        <field name="geogname">Attalia</field>
+        <field name="extrainfo">Barrington Atlas 65 E4</field>
+    </record>
+    <record>
+        <field name="id">Aulae</field>
+        <field name="geogname">Aulae</field>
+        <field name="extrainfo">Barrington Atlas 61 G4</field>
+    </record>
+    <record>
+        <field name="id">Bargylia</field>
+        <field name="geogname">Bargylia</field>
+        <field name="extrainfo">Barrington Atlas 61 F3</field>
+    </record>
+    <record>
+        <field name="id">Beirut</field>
+        <field name="geogname">Beirut</field>
+        <field name="extrainfo">Barrington Atlas 69 C2</field>
+    </record>
+    <record>
+        <field name="id">Beypinar</field>
+        <field name="geogname">Beypinar</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Bingeç</field>
+        <field name="geogname">Bingeç</field>
+        <field name="extrainfo">modern village,probable site of Plarasa. Barrington Atlas 65 A2</field>
+    </record>
+    <record>
+        <field name="id">Bizye</field>
+        <field name="geogname">Bizye</field>
+        <field name="extrainfo">Barrington Atlas 52 B1</field>
+    </record>
+    <record>
+        <field name="id">Caria</field>
+        <field name="geogname">Caria, later name for Aphrodisias</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Catania</field>
+        <field name="geogname">Catania</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Chonae</field>
+        <field name="geogname">Chonae</field>
+        <field name="extrainfo">Later name of Colossae, Barrington Atlas 65 B2</field>
+    </record>
+    <record>
+        <field name="id">Christoupolis</field>
+        <field name="geogname">Christoupolis</field>
+        <field name="extrainfo">later name of Dios Hieron, Barrington Atlas 56 G5</field>
+    </record>
+    <record>
+        <field name="id">cologne</field>
+        <field name="geogname">Cologne</field>
+        <field name="extrainfo">Barrington Atlas 11 G2</field>
+    </record>
+    <record>
+        <field name="id">Constantinople</field>
+        <field name="geogname">Constantinople</field>
+        <field name="extrainfo">Barrington Atlas 53 A2</field>
+    </record>
+    <record>
+        <field name="id">Coptus</field>
+        <field name="geogname">Coptus</field>
+        <field name="extrainfo">Barrington Atlas 80 B1</field>
+    </record>
+    <record>
+        <field name="id">Corycus</field>
+        <field name="geogname">Corycus</field>
+        <field name="extrainfo">Barrington Atlas 66 E4</field>
+    </record>
+    <record>
+        <field name="id">Cos</field>
+        <field name="geogname">Cos</field>
+        <field name="extrainfo">Barrington Atlas 61 E4</field>
+    </record>
+    <record>
+        <field name="id">Crete</field>
+        <field name="geogname">Crete</field>
+        <field name="extrainfo">Barrington Atlas 60 D2</field>
+    </record>
+    <record>
+        <field name="id">Cyclades</field>
+        <field name="geogname">Cyclades</field>
+        <field name="extrainfo">Barrington Atlas 57 D4</field>
+    </record>
+    <record>
+        <field name="id">Cyzicus</field>
+        <field name="geogname">Cyzicus</field>
+        <field name="extrainfo">Barrington Atlas 52 B4</field>
+    </record>
+    <record>
+        <field name="id">Damascus</field>
+        <field name="geogname">Damascus</field>
+        <field name="extrainfo">Barrington Atlas 69 D2</field>
+    </record>
+    <record>
+        <field name="id">Dandalas</field>
+        <field name="geogname">Dandalas</field>
+        <field name="extrainfo">river</field>
+    </record>
+    <record>
+        <field name="id">Daphne</field>
+        <field name="geogname">Daphne</field>
+        <field name="extrainfo">Barrington Atlas 67 C4</field>
+    </record>
+    <record>
+        <field name="id">Delphi</field>
+        <field name="geogname">Delphi</field>
+        <field name="extrainfo">Barrington Atlas 55 D4</field>
+    </record>
+    <record>
+        <field name="id">Didyma</field>
+        <field name="geogname">Didyma</field>
+        <field name="extrainfo">Barrington Atlas 61 E3</field>
+    </record>
+    <record>
+        <field name="id">DiosHieron</field>
+        <field name="geogname">Dios Hieron</field>
+        <field name="extrainfo">see also Christoupolis, Pyrgion; Barrington Atlas 56 G5</field>
+    </record>
+    <record>
+        <field name="id">Docimium</field>
+        <field name="geogname">Docimium</field>
+        <field name="extrainfo">Barrington Atlas 62 E4</field>
+    </record>
+    <record>
+        <field name="id">Dorylaeum</field>
+        <field name="geogname">Dorylaeum</field>
+        <field name="extrainfo">Barrington Atlas 62 E2</field>
+    </record>
+    <record>
+        <field name="id">Edessa</field>
+        <field name="geogname">Edessa</field>
+        <field name="extrainfo">Barrington Atlas 67 H2</field>
+    </record>
+    <record>
+        <field name="id">Elaeussa</field>
+        <field name="geogname">Elaeussa</field>
+        <field name="extrainfo">Barrington Atlas 66 E4</field>
+    </record>
+    <record>
+        <field name="id">Enaton</field>
+        <field name="geogname">Enaton</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Ephesus</field>
+        <field name="geogname">Ephesus</field>
+        <field name="extrainfo">Barrington Atlas 61 E2</field>
+    </record>
+    <record>
+        <field name="id">Eresos</field>
+        <field name="geogname">Eresos</field>
+        <field name="extrainfo">Barrington Atlas 56 B3</field>
+    </record>
+    <record>
+        <field name="id">Eumeneia</field>
+        <field name="geogname">Eumeneia</field>
+        <field name="extrainfo">Barrington Atlas 62 C5</field>
+    </record>
+    <record>
+        <field name="id">Ferrara</field>
+        <field name="geogname">Ferrara</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Florence</field>
+        <field name="geogname">Florence</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Gadara</field>
+        <field name="geogname">Gadara</field>
+        <field name="extrainfo">Barrington Atlas 69 C4</field>
+    </record>
+    <record>
+        <field name="id">Gaza</field>
+        <field name="geogname">Gaza</field>
+        <field name="extrainfo">Barrington Atlas 70 E2</field>
+    </record>
+    <record>
+        <field name="id">Gerasa</field>
+        <field name="geogname">Gerasa</field>
+        <field name="extrainfo">Barrington Atlas 69 C5</field>
+    </record>
+    <record>
+        <field name="id">Geyre</field>
+        <field name="geogname">Geyre, later name of Aphrodisias</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Gordiana</field>
+        <field name="geogname">Gordiana</field>
+        <field name="extrainfo">location unknown</field>
+    </record>
+    <record>
+        <field name="id">Gordiouteichos</field>
+        <field name="geogname">Gordiouteichos</field>
+        <field name="extrainfo">location unknown</field>
+    </record>
+    <record>
+        <field name="id">Gortyn</field>
+        <field name="geogname">Gortyn</field>
+        <field name="extrainfo">Barrington Atlas 60 C2</field>
+    </record>
+    <record>
+        <field name="id">Halicarnassus</field>
+        <field name="geogname">Halicarnassus</field>
+        <field name="extrainfo">Barrington Atlas 61 E3</field>
+    </record>
+    <record>
+        <field name="id">HeracleaLatmos</field>
+        <field name="geogname">Heraclea on Latmos</field>
+        <field name="extrainfo">Barrington Atlas 61 F2</field>
+    </record>
+    <record>
+        <field name="id">HeracleaPontica</field>
+        <field name="geogname">Heraclea Pontica</field>
+        <field name="extrainfo">Barrington Atlas 52 A3</field>
+    </record>
+    <record>
+        <field name="id">HeracleaSalbake</field>
+        <field name="geogname">Heraclea Salbake</field>
+        <field name="extrainfo">Barrington Atlas 65 A2</field>
+    </record>
+    <record>
+        <field name="id">Hierapolis</field>
+        <field name="geogname">Hierapolis</field>
+        <field name="extrainfo">of Phrygia. Barrington Atlas 65 B2</field>
+    </record>
+    <record>
+        <field name="id">Iasos</field>
+        <field name="geogname">Iasos</field>
+        <field name="extrainfo">Barrington Atlas 61 F3</field>
+    </record>
+    <record>
+        <field name="id">Iconium</field>
+        <field name="geogname">Iconium</field>
+        <field name="extrainfo">Barrington Atlas 66 B1</field>
+    </record>
+    <record>
+        <field name="id">Jerusalem</field>
+        <field name="geogname">Jerusalem</field>
+        <field name="extrainfo">Barrington Atlas 70 G2</field>
+    </record>
+    <record>
+        <field name="id">Keramos</field>
+        <field name="geogname">Keramos</field>
+        <field name="extrainfo">Barrington Atlas 61 F3</field>
+    </record>
+    <record>
+        <field name="id">Labraunda</field>
+        <field name="geogname">Labraunda</field>
+        <field name="extrainfo">Barrington Atlas 61 F3</field>
+    </record>
+    <record>
+        <field name="id">Laodicea</field>
+        <field name="geogname">Laodicea</field>
+        <field name="extrainfo">Barrington Atlas 65 B2</field>
+    </record>
+    <record>
+        <field name="id">Lystra</field>
+        <field name="geogname">Lystra</field>
+        <field name="extrainfo">Barrington Atlas 66 A1</field>
+    </record>
+    <record>
+        <field name="id">Maeander</field>
+        <field name="geogname">Maeander</field>
+        <field name="extrainfo">river</field>
+    </record>
+    <record>
+        <field name="id">Magnesia</field>
+        <field name="geogname">Magnesia</field>
+        <field name="extrainfo">Barrington Atlas 61 F2</field>
+    </record>
+    <record>
+        <field name="id">Mainz</field>
+        <field name="geogname">Mainz</field>
+        <field name="extrainfo">Germany</field>
+    </record>
+    <record>
+        <field name="id">Malos</field>
+        <field name="geogname">Malos</field>
+        <field name="extrainfo">Barrington Atlas 62 E3</field>
+    </record>
+    <record>
+        <field name="id">Mastaura</field>
+        <field name="geogname">Mastaura</field>
+        <field name="extrainfo">Barrington Atlas 61 G2</field>
+    </record>
+    <record>
+        <field name="id">Megara</field>
+        <field name="geogname">Megara</field>
+        <field name="extrainfo">Barrington Atlas 58 E2</field>
+    </record>
+    <record>
+        <field name="id">Meirus</field>
+        <field name="geogname">Meirus</field>
+        <field name="extrainfo">Barrington Atlas 62 D3</field>
+    </record>
+    <record>
+        <field name="id">Melitene</field>
+        <field name="geogname">Melitene</field>
+        <field name="extrainfo">Barrington Atlas 64 G4</field>
+    </record>
+    <record>
+        <field name="id">Menouthis</field>
+        <field name="geogname">Menouthis</field>
+        <field name="extrainfo">Barrington Atlas 74 C2</field>
+    </record>
+    <record>
+        <field name="id">Mesembria</field>
+        <field name="geogname">Mesembria</field>
+        <field name="extrainfo">Barrington Atlas 22 E6</field>
+    </record>
+    <record>
+        <field name="id">Miletus</field>
+        <field name="geogname">Miletus</field>
+        <field name="extrainfo">Barrington Atlas 61 E2</field>
+    </record>
+    <record>
+        <field name="id">Mopsuestia</field>
+        <field name="geogname">Mopsuestia</field>
+        <field name="extrainfo">Barrington Atlas 67 B3</field>
+    </record>
+    <record>
+        <field name="id">Mylasa</field>
+        <field name="geogname">Mylasa</field>
+        <field name="extrainfo">Barrington Atlas 61 F3</field>
+    </record>
+    <record>
+        <field name="id">Myra</field>
+        <field name="geogname">Myra</field>
+        <field name="extrainfo">Barrington Atlas 65 C5</field>
+    </record>
+    <record>
+        <field name="id">Myriocephalon</field>
+        <field name="geogname">Myriocephalon</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Nacle</field>
+        <field name="geogname">Nacle</field>
+        <field name="extrainfo">Barrington Atlas 69 D1</field>
+    </record>
+    <record>
+        <field name="id">Nicomedia</field>
+        <field name="geogname">Nicomedia</field>
+        <field name="extrainfo">Barrington Atlas 52 F3</field>
+    </record>
+    <record>
+        <field name="id">Nile</field>
+        <field name="geogname">Nile</field>
+        <field name="extrainfo">river</field>
+    </record>
+    <record>
+        <field name="id">ocean</field>
+        <field name="geogname">Ocean</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Oenoanda</field>
+        <field name="geogname">Oenoanda</field>
+        <field name="extrainfo"> Barrington Atlas 65 C4</field>
+    </record>
+    <record>
+        <field name="id">olympus</field>
+        <field name="geogname">Olympus</field>
+        <field name="extrainfo">used metaphorically, for 'heaven'</field>
+    </record>
+    <record>
+        <field name="id">Ostia</field>
+        <field name="geogname">Ostia</field>
+        <field name="extrainfo">Barrington Atlas 43 B2</field>
+    </record>
+    <record>
+        <field name="id">Oxyrhynchus</field>
+        <field name="geogname">Oxyrhynchus</field>
+        <field name="extrainfo">Barrington Atlas 75 D3</field>
+    </record>
+    <record>
+        <field name="id">Palmyra</field>
+        <field name="geogname">Palmyra</field>
+        <field name="extrainfo">Barrington Atlas 68 F4</field>
+    </record>
+    <record>
+        <field name="id">Panamara</field>
+        <field name="geogname">Panamara</field>
+        <field name="extrainfo">Barrington Atlas 61 G3</field>
+    </record>
+    <record>
+        <field name="id">Panticapaeum</field>
+        <field name="geogname">Panticapaeum</field>
+        <field name="extrainfo">Barrington Atlas 87 K2</field>
+    </record>
+    <record>
+        <field name="id">Perge</field>
+        <field name="geogname">Perge</field>
+        <field name="extrainfo">Barrington Atlas 65 E4</field>
+    </record>
+    <record>
+        <field name="id">Pessinus</field>
+        <field name="geogname">Pessinus</field>
+        <field name="extrainfo">Barrington Atlas 62 G3</field>
+    </record>
+    <record>
+        <field name="id">Philadelphia</field>
+        <field name="geogname">Philadelphia</field>
+        <field name="extrainfo">Barrington Atlas 56 H5</field>
+    </record>
+    <record>
+        <field name="id">Philippopolis</field>
+        <field name="geogname">Philippopolis</field>
+        <field name="extrainfo">Barrington Atlas 69 E4</field>
+    </record>
+    <record>
+        <field name="id">Philomelium</field>
+        <field name="geogname">Philomelium</field>
+        <field name="extrainfo">Barrington Atlas 62 F5</field>
+    </record>
+    <record>
+        <field name="id">Pinarbasi</field>
+        <field name="geogname">Pinarbasi</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Pirlibey</field>
+        <field name="geogname">Pirlibey</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Pitanae</field>
+        <field name="geogname">Pitanae</field>
+        <field name="extrainfo">Barrington Atlas 56 D4</field>
+    </record>
+    <record>
+        <field name="id">Plarasa</field>
+        <field name="geogname">Plarasa</field>
+        <field name="extrainfo">see also Bingec: Barrington Atlas 65 A2</field>
+    </record>
+    <record>
+        <field name="id">Priene</field>
+        <field name="geogname">Priene</field>
+        <field name="extrainfo">Barrington Atlas 61 E2</field>
+    </record>
+    <record>
+        <field name="id">Prusa</field>
+        <field name="geogname">Prusa</field>
+        <field name="extrainfo">Barrington Atlas 52 E4</field>
+    </record>
+    <record>
+        <field name="id">Pyrgion</field>
+        <field name="geogname">Pyrgion</field>
+        <field name="extrainfo">later name of Dios Hieron: Barrington Atlas 56 G5</field>
+    </record>
+    <record>
+        <field name="id">Resafa</field>
+        <field name="geogname">Resafa</field>
+        <field name="extrainfo">Barrington Atlas 68 G2</field>
+    </record>
+    <record>
+        <field name="id">Rhodes</field>
+        <field name="geogname">Rhodes</field>
+        <field name="extrainfo">Barrington Atlas60 F3</field>
+    </record>
+    <record>
+        <field name="id">Rhone</field>
+        <field name="geogname">Rhone</field>
+        <field name="extrainfo">river</field>
+    </record>
+    <record>
+        <field name="id">Rome</field>
+        <field name="geogname">Rome</field>
+        <field name="extrainfo">Barrington Atlas 43 B2</field>
+    </record>
+    <record>
+        <field name="id">Sanaos</field>
+        <field name="geogname">Sanaos</field>
+        <field name="extrainfo">Barrington Atlas 65 C2</field>
+    </record>
+    <record>
+        <field name="id">Sardis</field>
+        <field name="geogname">Sardis</field>
+        <field name="extrainfo">Barrington Atlas 56 G5</field>
+    </record>
+    <record>
+        <field name="id">SeleuceaCalycad</field>
+        <field name="geogname">Seleuceia-ad-Calycadnum</field>
+        <field name="extrainfo">Barrington Atlas 66 D4</field>
+    </record>
+    <record>
+        <field name="id">Selge</field>
+        <field name="geogname">Selge</field>
+        <field name="extrainfo">Barrington Atlas 65 F3</field>
+    </record>
+    <record>
+        <field name="id">Side</field>
+        <field name="geogname">Side</field>
+        <field name="extrainfo">Barrington Atlas 65 F4</field>
+    </record>
+    <record>
+        <field name="id">Sidon</field>
+        <field name="geogname">Sidon</field>
+        <field name="extrainfo">Barrington Atlas 69 B2</field>
+    </record>
+    <record>
+        <field name="id">Sidyma</field>
+        <field name="geogname">Sidyma</field>
+        <field name="extrainfo">Barrington Atlas 65 B5</field>
+    </record>
+    <record>
+        <field name="id">Sinai</field>
+        <field name="geogname">Sinai</field>
+        <field name="extrainfo">Barrington Atlas 76 D4</field>
+    </record>
+    <record>
+        <field name="id">Sion</field>
+        <field name="geogname">Sion</field>
+        <field name="extrainfo">monastery, near Myra</field>
+    </record>
+    <record>
+        <field name="id">Skaliotissa</field>
+        <field name="geogname">Skaliotissa</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Smirat</field>
+        <field name="geogname">Smirat</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Smyrna</field>
+        <field name="geogname">Smyrna</field>
+        <field name="extrainfo">Barrington Atlas 56 E5</field>
+    </record>
+    <record>
+        <field name="id">Sozopolis1</field>
+        <field name="geogname">Sozopolis, later name of Apollonia in Pisidia</field>
+        <field name="extrainfo">Barrington Atlas 65 D1</field>
+    </record>
+    <record>
+        <field name="id">Sozopolis2</field>
+        <field name="geogname">Sozopolis, later name of Apollonia in Thrace</field>
+        <field name="extrainfo"> Barrington Atlas 51 C3</field>
+    </record>
+    <record>
+        <field name="id">Sozousa1</field>
+        <field name="geogname">Sozousa, later name of Apollonia in Palestine</field>
+        <field name="extrainfo">Barrington Atlas 69 A5</field>
+    </record>
+    <record>
+        <field name="id">Sozousa2</field>
+        <field name="geogname">Sozousa, later name of Apollonia in Libya</field>
+        <field name="extrainfo">Barrington Atlas 38 C1</field>
+    </record>
+    <record>
+        <field name="id">Stauropolis</field>
+        <field name="geogname">Stauropolis, later name of Aphrodisias</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Stratonicea</field>
+        <field name="geogname">Stratonicaea</field>
+        <field name="extrainfo">Barrington Atlas 61 G3</field>
+    </record>
+    <record>
+        <field name="id">Syceon</field>
+        <field name="geogname">Syceon</field>
+        <field name="extrainfo">Barrington Atlas 86 B3</field>
+    </record>
+    <record>
+        <field name="id">Synnada</field>
+        <field name="geogname">Synnada</field>
+        <field name="extrainfo">Barrington Atlas 62 E4</field>
+    </record>
+    <record>
+        <field name="id">Tabae</field>
+        <field name="geogname">Tabae</field>
+        <field name="extrainfo">Barrington Atlas 65 A3</field>
+    </record>
+    <record>
+        <field name="id">Tantalus</field>
+        <field name="geogname">Tantalus</field>
+        <field name="extrainfo">river</field>
+    </record>
+    <record>
+        <field name="id">Tarsus</field>
+        <field name="geogname">Tarsus</field>
+        <field name="extrainfo">Barrington Atlas 66 F3</field>
+    </record>
+    <record>
+        <field name="id">Tauropolis</field>
+        <field name="geogname">Tauropolis: ? name for Aphrodisias</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Tebessa</field>
+        <field name="geogname">Tebessa</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Tekin</field>
+        <field name="geogname">Tekin</field>
+        <field name="extrainfo"/>
+    </record>
+    <record>
+        <field name="id">Terenouthis</field>
+        <field name="geogname">Terenouthis</field>
+        <field name="extrainfo">Barrington Atlas 74 D4</field>
+    </record>
+    <record>
+        <field name="id">Thebes</field>
+        <field name="geogname">Thebes of Egypt</field>
+        <field name="extrainfo">Barrington Atlas 80 B2</field>
+    </record>
+    <record>
+        <field name="id">Theotokiana</field>
+        <field name="geogname">Theotokiana, later name of Prusa</field>
+        <field name="extrainfo">Barrington Atlas 52 E4</field>
+    </record>
+    <record>
+        <field name="id">Theoupolis1</field>
+        <field name="geogname">Theoupolis, later name of Syrian Antioch</field>
+        <field name="extrainfo"> Barrington Atlas 89 D3</field>
+    </record>
+    <record>
+        <field name="id">Theoupolis2</field>
+        <field name="geogname">Theoupolis, later name of Prusa</field>
+        <field name="extrainfo">Barrington Atlas 52 E4</field>
+    </record>
+    <record>
+        <field name="id">Thessalonica</field>
+        <field name="geogname">Thessalonica</field>
+        <field name="extrainfo"> Barrington Atlas 50 C3</field>
+    </record>
+    <record>
+        <field name="id">Tigris</field>
+        <field name="geogname">Tigris</field>
+        <field name="extrainfo">river. Barrington Atlas 93 C1</field>
+    </record>
+    <record>
+        <field name="id">Tralles</field>
+        <field name="geogname">Tralles</field>
+        <field name="extrainfo"> Barrington Atlas 61 F2</field>
+    </record>
+    <record>
+        <field name="id">Tyre</field>
+        <field name="geogname">Tyre</field>
+        <field name="extrainfo"> Barrington Atlas 69 B3</field>
+    </record>
+    <record>
+        <field name="id">Xanthos</field>
+        <field name="geogname">Xanthos</field>
+        <field name="extrainfo"> Barrington Atlas 65 B5</field>
+    </record>
+</dataset>
