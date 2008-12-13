@@ -174,6 +174,16 @@ class RuleSet():
             
     def __call__(self, this, that):
         for eval, i, j in self.rules:
+            try:
+                x = this[i]
+            except IndexError:
+                l.critical("i=%s and this = %s" % (i, this))
+                raise
+            try:
+                y = that[j]
+            except IndexError:
+                l.critical("j=%s and that = %s" % (j, that))
+                raise
             if eval(this[i], that[j]):
                 pass
             else:

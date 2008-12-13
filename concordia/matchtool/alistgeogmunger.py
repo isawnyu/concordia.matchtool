@@ -9,6 +9,8 @@ BAREGEX = 'Barrington Atlas (\d\d) ([A-Z]\d)'
 GNAMELOC = '(\w+) (in|of) ([\w\s]*)'
 GNAMEPOST = '(\w+)[\.:,;] ([\w\s]*)'
 
+fieldnames = ['id', 'geogname', 'mapnum', 'gridsquare', 'modname', 'locdesc',  'type', 'extra']
+
 def munge(alistgeo):
     result = []
     reba = re.compile(BAREGEX)
@@ -25,10 +27,10 @@ def munge(alistgeo):
             if m:
                 map, grid = m.groups()
             else:
-                print "did not find barrington atlas info for:"
+                print "munger did not find barrington atlas citation in alistgeo info:"
                 print (a,b,c)
         else:
-            print "did not find barrington atlas info for:"
+            print "munger did not find barrington atlas citation in alistgeo content:"
             print (a,b,c)
 
         # clean up geographic name and trap for locational and other annotations
@@ -51,10 +53,10 @@ def munge(alistgeo):
             print (a,b,c)
 
         # trap for rivers and act accordingly
-        river = False
+        river = None
         if c:
             if 'river' in c:
-                river = True
+                river = 'river'
 
         # trap for modern and act accordingly
         modern = False
