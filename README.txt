@@ -71,6 +71,20 @@ using the python built-in help() function, for example:
 >>> import concordia.matchtool.match as m
 >>> help(m)
 
+
+Aphrodisias Inscriptions Places Mentioned
+
+>>> python alistgeo.py
+
+writes results to concordia/matchtool/data/results.xml
+
+it's still got rudimentary rules and reporting, but it's a start
+
+
+
+
+
+
 concordia/matchtool/rules.py defines classes for building, managing and executing rulesets
 
 concordia/matchtool/dset.py defines classes for managing datasets to be related (would/could build parsers to read data in various formats 
